@@ -1,0 +1,230 @@
+/* MAIN AREA */
+.mainArea{
+    background-color: #191919;
+    border-radius: 2%;
+    flex: 1;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    margin: 0 0.5rem 0 0;
+    width: 56rem;
+    height: calc(100vh-5rem);
+}
+
+.mainArea::-webkit-scrollbar {
+    width: 0.5rem;
+}
+.mainArea::-webkit-scrollbar-track {
+    background: transparent;
+}
+.mainArea::-webkit-scrollbar-thumb {
+    background-color: #888888;
+    border-radius: 0.3rem;
+}
+.mainArea::-webkit-scrollbar-thumb:hover {
+    background-color: #555;
+}
+
+.mainArea .stickyBar{
+    display: flex;
+    height: 3rem;
+    width: 100vw;
+    position: sticky;
+
+    top: 0;
+    background-color: black;
+    border-top-right-radius: 2%;
+    border-top-left-radius: 2%;
+    z-index: 15;
+}
+.stickyBar div{
+    height: 1rem;
+    padding: 0.25rem 0.5rem;
+    color: white;
+    background-color: #1f1f1f;
+    font-size: 0.8rem;
+    border-radius: 0.75rem;
+    margin-top: 0.7rem;
+    line-height: 1rem;
+    cursor: pointer;   
+}
+.stickyBar .all{
+    color: black;
+    background-color: white;
+    margin-left: 1rem;
+}
+.stickyBar .music{
+    margin-left: 1rem;
+}
+.stickyBar .podcasts{
+    margin-left: 1rem;
+}
+
+
+.one, .two, .three, .four, .five{
+    height: 18rem;
+}
+.recent, .charts, .most, .top, .hits{
+    display: flex;
+}
+.c{
+    position: relative;
+    height: 16rem;
+    width: 11rem;
+    background-color: transparent;
+    place-items: center;
+    margin-left: 1rem;
+}
+.c .play_btn{
+    position: absolute;
+    font-size: 2.5rem;
+    margin-top: 14rem;
+    margin-left: 9rem;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 10;
+}
+.c div img{
+    margin-top: 1rem;
+    height: 10rem;
+    width: 10rem;
+}
+.c:hover{
+    cursor: pointer;
+    background-color: #2a2a2a;
+}
+.c:hover .play_btn{
+    opacity: 1;
+    visibility: visible;
+}
+.c .p1{
+    font-size: 1rem;
+    font-weight: bolder;
+    color: whitesmoke;
+    margin-bottom: 0;
+}
+.c .p2{
+    font-size: 0.8rem;
+    color: #888888;
+    margin-top: 0.5rem;
+}
+.c p{
+    text-align: left;
+}
+
+h2{
+    margin-left: 0.5rem;
+}
+
+
+.six{
+    margin-top: 10rem;
+    display: flex;
+}
+.six div{
+    width: 10rem;
+}
+.six ul{
+    list-style-type: none;
+    white-space: nowrap;
+}
+.six li{
+    font-size: 0.8rem;
+    font-weight: 500;
+    line-height: 1.5rem;
+}
+.six .bold{
+    font-weight: 800;
+}
+.six1, .six2, .six3, .six4, .social{
+    margin-left: 4rem;
+}
+.six .social{
+    display: flex;
+}
+.six .social div{
+    background-color: #2a2a2a;
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+.insta, .twitter, .facebook{
+    margin-left: 1rem;
+    opacity: 0.7;
+}
+.insta:hover, .twitter:hover, .facebook:hover{
+    opacity: 1;
+    background-color: #555;
+}
+.social i{
+    margin-top: 0.7rem;
+    margin-left: 0.7rem;
+}
+
+.seven{
+    height: 20rem;
+}
+.seven ul{
+    display: flex;
+    list-style-type: none;
+}
+.seven li{
+    font-size: 0.7rem;
+    margin-left: 1rem;
+}
+.seven .left{
+    margin-left: auto;
+}
+.click{
+    cursor: pointer;
+    opacity: 0.7;
+}
+.click:hover{
+    text-decoration: underline;
+    opacity: 1;
+}
+
+.seven ul li:hover{
+    text-decoration: none;
+}
+
+@media (max-width: 1300px){
+    .recent, .charts, .most, .top, .hits, .seven ul{
+        display: grid; 
+        grid-template-columns: repeat(5, 1fr);
+    }
+    .six{
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-left: 2rem;
+    }
+    .seven ul .left{
+        margin-left: 1rem;
+    }
+    .one, .two, .three, .four, .five, .six, .seven{
+        height: 36rem;
+    }
+
+}
+
+@media (max-width: 1200px){
+    .recent, .charts, .most, .top, .hits, .six, .seven ul{
+        display: grid; 
+        grid-template-columns: repeat(3, 1fr);
+    }
+    .one, .two, .three, .four, .five, .six, .seven{
+        height: 36rem;
+    }
+
+}
+
+@media (max-width: 900px){
+    .recent, .charts, .most, .top, .hits, .six, .seven ul{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .one, .two, .three, .four, .five, .six, .seven{
+        height: 54rem;
+    }
+}
+
+

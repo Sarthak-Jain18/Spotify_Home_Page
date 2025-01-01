@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="icon" href="assets/logo.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" 
+    integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" 
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title>Spotify - Web Player: Music for Everyone</title>
+</head>
+<body>
+    <div class="main">
+        <div class="navBar">
+            <div class="logo" title="Spotify">
+                <a href="#"><img src="assets\logo2.png"></a>
+            </div>
+            <div class="home shift" title="Home">
+                <div>
+                    <a href="#"><img src="assets\home.png"></a>
+                </div>
+            </div>
+            <div class="search shift" title="Search">
+                <div class="s"><i class="fa-solid fa-magnifying-glass"></i></div>
+                <div class="badge long">&nbsp;What do you want to play?</div>
+                <div class="badge short">&nbsp;Search</div>
+            </div>
+            <div class="explore hide" title="Explore Premium">
+                <a href="#"><div>Explore Premium</div></a>
+            </div>
+            <div class="install hide2" title="Install App">
+                <a href="#">
+                    <div class="icon"><i class="fa-regular fa-circle-down"></i></div>
+                    <div class="i">&nbsp;Install App</div>
+                </a>
+            </div>
+            <div class="bell hide" title="Notifications">
+                <i class="fa-solid fa-bell"></i>
+            </div>
+            <div class="profile" title="Profile">
+                <i class="fa-solid fa-user"></i>
+            </div>
+        </div>
+        <div class="sideBar">
+            <div class="b1">
+                <div class="b10">
+                    <div class="b100" title="Your Library"><a href="#"><i class="fa-solid fa-lines-leaning"></i>&nbsp;Your Library</a></div>
+                    <div class="b101" title="Create Playlist"><a href="#"><i class="fa-solid fa-plus" title="Create playlist of folder"></i></a></div>
+                </div>
+                <div class="b11">
+                    <span>
+                        <p class="p1"><b>Create your first playlist</b></p>
+                        <p class="p2">It's easy, we'll help you</p>
+                    </span>
+                    <div title="Create Playlist">
+                        <a href="#">Create playlist</a>
+                    </div>
+                </div>
+                <div class="b12">
+                    <span>
+                        <p class="p1"><b>Let's find some podcasts to follow</b></p>
+                        <p class="p2">We'll keep you updated on new episodes</p>
+                    </span>
+                    <div title="Browse Podcasts">
+                        <a href="#">Browse podcasts</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainArea">
+            <div class="stickyBar">
+                <div class="all">All</div>
+                <div class="music">Music</div>
+                <div class="podcasts">Podcasts</div>
+            </div>
+            <div class="content">
+                <div class="one">
+                    <h2>Recently Played</h2>
+                    <div class="recent">
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\namokar.jpg"></div>
+                            <div><p class="p1">Namokar Mantra</p>
+                            <p class="p2">Ravindra Jain</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\bhaktambarstrotra.jpg"></div>
+                            <div><p class="p1">Bhaktamar Stotra</p>
+                            <p class="p2">Ravindra Jain</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\hanumanchalisa.jpg"></div>
+                            <div><p class="p1">Shree Hanuman Chalisa</p>
+                            <p class="p2">Hariharan</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\shreeparasnathchalisa.jpg"></div>
+                            <div><p class="p1">Shree Parshwanth Chalisa</p>
+                            <p class="p2">Rupesh Jain</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\aaonaaraaj.jpg"></div>
+                            <div><p class="p1">Aavo Nar Naar Aaj</p>
+                            <p class="p2">Aditya Gadhvi</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\aartiKunj.jpg"></div>
+                            <div><p class="p1">Aarti Kunj Bihari Ki</p>
+                            <p class="p2">Lakhbir Singh Lakkha</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="two">
+                    <h2>Featured Charts</h2>
+                    <div class="charts">
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\global.jpg"></div>
+                            <div><p class="p2">Your weekly update of the most played tracks right now - Global</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\top50india.jpg"></div>
+                            <div><p class="p2">Your daily update of the top tracks right now - India.</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\chile.png"></div>
+                            <div><p class="p2">Your weekly update of the most chile tracks right now - Chile</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\top50global.jpg"></div>
+                            <div><p class="p2">Your daily update of the top tracks right now - Global.</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\viral50global.jpg"></div>
+                            <div><p class="p2">Your daily update of the most viral tracks right now - Global.</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\viral50India.jpg"></div>
+                            <div><p class="p2">Your daily update of the most viral tracks right now - India.</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="three">
+                    <h2>Mostly Played</h2>
+                    <div class="most">
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\meribhavna.jpg"></div>
+                            <div><p class="p1">Meri Bhavna</p>
+                            <p class="p2">Rupak Jain</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\namaste sada.jpg"></div>
+                            <div><p class="p1">Namaste Sada</p>
+                            <p class="p2">Akshay Pandya</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\harsSaalShikharji.jpg"></div>
+                            <div><p class="p1">Har Saal Shikherji</p>
+                            <p class="p2">Rupesh Jain</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\hmaresath.jpg"></div>
+                            <div><p class="p1">Hamare Sath Shree Raghunath</p>
+                            <p class="p2">Prembhusan Ji</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="four">
+                    <h2>Top Charts</h2>
+                    <div class="top">
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\shoorveer.jpg"></div>
+                            <div><p class="p1">Shoorveer</p>
+                            <p class="p2">Rapperiya Baalam</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\shoorveer 3.jpg"></div>
+                            <div><p class="p1">Shoorveer 3</p>
+                            <p class="p2">Rapperiya Baalam</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\ramnamilenge.jpg"></div>
+                            <div><p class="p1">Ram Na Milenge Hanuman ke Bina</p>
+                            <p class="p2">Lakhbir Singh Lakkha</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\vairaginVandan.jpg"></div>
+                            <div><p class="p1">Vairagi Ne Vandan</p>
+                            <p class="p2">Hitesh Udani</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="five">
+                    <h2>Top Hits</h2>
+                    <div class="hits">
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\desikalakar.jpg"></div>
+                            <div><p class="p1">Desi Kalakar</p>
+                            <p class="p2">Yo Yo Honey Singh</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\gaalNi.jpg"></div>
+                            <div><p class="p1">Gaal Ni Kadni</p>
+                            <p class="p2">Parmish Verma</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\highrated.jpg"></div>
+                            <div><p class="p1">High Rated Gabru</p>
+                            <p class="p2">Guru Randhawa</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\hojaygiblle.jpg"></div>
+                            <div><p class="p1">Ho Jayegi Balle Balle</p>
+                            <p class="p2">Daler Mehndi</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\lahore.jpg"></div>
+                            <div><p class="p1">Lahore</p>
+                            <p class="p2">Guru Randhawa</p></div>
+                        </div>
+                        <div class="c">
+                            <i class="fa-solid fa-circle-play play_btn" style="color: #1bd760;"></i>
+                            <div><img src="assets\tunaktunak.jpg"></div>
+                            <div><p class="p1">Tunak Tunak Tun</p>
+                            <p class="p2">Daler Mehndi</p></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="six">
+                    <div class="six1">
+                        <ul>
+                            <li class="bold">Company</li>
+                            <li class="click">About</li>
+                            <li class="click">Jobs</li>
+                            <li class="click">For the Record</li>
+                        </ul>
+                    </div>
+                    <div class="six2">
+                        <ul>
+                            <li class="bold">Communities </li>
+                            <li class="click">For Artists</li>
+                            <li class="click">Developers</li>
+                            <li class="click">Advertising</li>
+                            <li class="click">Investors</li>
+                            <li class="click">Vendors</li>
+                        </ul>
+                    </div>
+                    <div class="six3">
+                        <ul>
+                            <li class="bold">Useful links</li>
+                            <li class="click">Support</li>
+                            <li class="click">Free Mobile App</li>
+                        </ul>
+                    </div>
+                    <div class="six4">
+                        <ul>
+                            <li class="bold">Spotify Plans</li>
+                            <li class="click">Premium Individual</li>
+                            <li class="click">Premium Duo</li>
+                            <li class="click">Premium Family</li>
+                            <li class="click">Premium Student</li>
+                            <li class="click">Spotify Free</li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <div class="insta"><i class="fa-brands fa-instagram"></i></div>
+                        <div class="twitter"><i class="fa-brands fa-twitter"></i></div>
+                        <div class="facebook"><i class="fa-brands fa-facebook"></i></div>
+                    </div>
+                </div>
+                <hr>
+                <div class="seven">
+                    <ul>
+                        <li class="click">Legal</li>
+                        <li class="click">Safety & Privacy Center</li>
+                        <li class="click">Privacy Policy</li>
+                        <li class="click">Cookies</li>
+                        <li class="click">About Ads</li>
+                        <li class="click">Accessibility</li>
+                        <li class="left"><i class="fa-regular fa-copyright"></i>&nbsp;2024 Spotify AB</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="player">
+            <div class="current">
+                <div class="photo">
+                    <img src="assets\playerIMG.png">
+                </div>
+                <div class="details" title="See details">
+                    <p class="p1">Om Namo Arihantanam</p>
+                    <p class="p2">Anuradha Paudwl</p>
+                </div>
+                <div class="like">
+                    <i class="fa-solid fa-heart" title="Add to Liked Songs"></i>
+                </div>
+            </div>
+            <div class="control">
+                <div class="upper">
+                    <div class="shuffle" title="Shuffle"><i class="fa-solid fa-shuffle"></i></div>
+                    <div class="back" title="Previous"><i class="fa-solid fa-backward-step"></i></div>
+                    <div class="play" title="Play"><i class="fa-solid fa-circle-play"></i></div>
+                    <div class="next" title="Next"><i class="fa-solid fa-forward-step"></i></div>
+                    <div class="loop" title="Loop"><i class="fa-solid fa-repeat"></i></div>
+                </div>
+                <div class="lower">
+                    <span class="lb">0:00</span>
+                    <input type="range" min="0" max="100" class="progressBar" step="1">
+                    <span class="ub">3:53</span>
+                </div>
+            </div>
+            <div class="others">
+                <div class="lyrics" title="Lyrics"><img src="assets\lyrics.png"></div>
+                <div class="device hide4" title="Devices"><img src="assets\devices.png"></div>
+                <div class="queue" title="Add to queue"><img src="assets\addtoqueue.png"></div>
+                <div class="volume" title="Volume">
+                    <div class="v"><img src="assets\volume_up.png"></div>
+                    <div class="p"><input type="range" min="0" max="100" class="progressBar2" step="1"></div>
+                </div>
+                <div class="fullScreen hide4" title="Fullscreen"><img src="assets\open_in_full.png"></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+
+
+
+
+
+

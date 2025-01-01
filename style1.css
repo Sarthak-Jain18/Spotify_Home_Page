@@ -1,0 +1,260 @@
+body{
+    font-family: "Montserrat", serif;
+    margin: 0;
+    background-color: black;
+    color: white;
+    overflow: hidden;
+}
+
+.main{
+    padding-top: 4rem;
+    height: 100vh;
+    display: flex;
+}
+
+/* NAV BAR */
+.navBar{
+    background-color: black;
+    justify-content: space-between;
+    margin: 0.5rem;
+    margin-left: 1rem;
+    position: fixed;
+    top: 0;
+    height: 3rem;
+    width: 100%;
+    display: flex;
+}
+.logo{
+    height: 2rem;
+    width: 2rem;
+    margin-left: 1rem;
+    margin-top: 0.5rem;
+    background-color: white;
+}
+.logo img{
+    height: 2rem;
+    width: 2rem;
+}
+.home{
+    margin-left: 25rem;
+}
+.home div{
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    border-radius: 50%;
+}
+.home img{
+    padding-left: 0.75rem;
+    padding-top: 0.75rem;
+    height: 1.5rem;
+    width: 1.5rem;
+    opacity: 0.5;
+}
+.home img:hover{
+    opacity: 1;
+}
+.search{
+    display: flex;
+    height: 2.5rem;
+    width: 28rem;
+    border: 2px solid gray;
+    padding: 0.6rem 1rem 0 1rem;
+    background-image: black;
+    color: gray;
+    font-size: 1rem;
+    border-radius: 2rem;
+    transition: 30ms;
+    opacity: 0.8;
+    cursor: text;
+}
+.search:hover{
+    opacity: 1;
+    background-color: #2a2a2a;
+}
+.search .s, .search .badge{
+    padding-top: 0.2rem;
+    padding-left: 0.2rem;
+}
+.short{
+    display: none;
+}
+.explore{
+    margin-top: 0.8rem;
+    padding: 0 1rem;
+}
+.explore a{
+    text-decoration: none;
+    color: black;
+    font-size: 0.9rem;
+    font-weight: 600;
+}
+.explore div{
+    padding: 0.35rem;
+    border-radius: 2rem;
+    background-color: white;
+}
+.install{
+    margin-top: 0.5rem;
+}
+.install a{
+    display: flex;
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-decoration: none;
+    color: white;
+    background-color: black;
+}
+.install .icon{
+    font-size: larger;
+}
+.bell{
+    height: 3rem;
+    width: 3rem;
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 50%;
+    justify-content: center;
+}
+.bell i{
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+    margin-top: 0.7rem;
+}
+.bell:hover{
+    background-color: #2a2a2a;
+    opacity: 1;
+    cursor: pointer;
+}
+.profile{
+    height: 3rem;
+    width: 3rem;
+    margin-right: 1.5rem;
+    border-radius: 50%;
+    background-color: #191919;
+}
+.profile i{
+    margin-top: 0.6rem;
+    margin-left: 0.8rem;
+    font-size: 1.5rem;
+}
+.profile:hover{
+    background-color: #2a2a2a;
+    cursor: pointer;
+}
+
+/* SIDE BAR */
+.sideBar{
+    width: 24rem;
+    background-color: black;
+    padding-top: 0rem;
+    padding-left: 1rem;
+    border-radius: 3%;
+}
+
+.b1{
+    width: 23rem;
+    background-color: #1f1f1f;
+    border-radius: 2%;
+    margin: 5px;
+    margin-top: 0;
+    height: 35rem;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20px;
+}
+.b10, .b11, .b12{
+    border-radius: 2%;
+    margin: 5px 10px;
+    height: 8rem;
+    width: 21.5rem;
+    background-color: #2a2a2a;
+}
+.b10{
+    display: flex;
+    justify-content: space-between;
+    height: 2.5rem;
+    background-color: #1f1f1f;
+}
+.b100{
+    padding-left: 0.5rem;
+    opacity: 0.5;
+}
+.b101{
+    padding-right: 0.5rem;
+    opacity: 0.5;
+}
+.b100:hover, .b101:hover{
+    opacity: 1;
+}
+.b10 a{
+    text-decoration: none;
+    color: white;
+    line-height: 2rem;
+}
+
+.b11, .b12{
+    padding-top: 0.2rem;
+    padding-left: 0.5rem;
+}
+.b11 div, .b12 div{
+    padding-top: 0.5rem;
+}
+.b11 .p2, .b12 .p2{
+    font-size: smaller;
+}
+.b11 a, .b12 a{
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    padding: 5px 15px;
+    font-size: 13px;
+    border-radius: 2rem;
+    font-weight: 600;
+    transform: 30ms;
+}
+.b11 a:hover, .b12 a:hover{
+    padding: 7px 16px;
+    font-weight: 700;
+}
+
+/* MEDIA QUERIES */
+@media (max-width: 1400px){
+    .shift{
+        margin-left: 4rem;
+    }
+}
+@media (max-width: 1120px){
+    .shift{
+        margin-left: 1rem;
+    }
+}
+@media (max-width: 1000px){
+    .hide{
+        display: none;
+    }
+}
+@media (max-width: 800px){
+    .hide2{
+        display: none;
+    }
+}
+@media (max-width: 700px){
+    .body{
+        overflow-x: auto;
+    }
+}
+@media (max-width: 500px){
+    .short{
+        display: block;
+    }
+    .long{
+        display: none;
+    }
+}
+
+
+
+
+
