@@ -17,12 +17,12 @@ It aims to replicate the design of the original **Spotify user's landing page** 
 
 ## 📂 Folder Structure
 
-├── index.html        # Main HTML file
-├── style1.css        # CSS styles for `fixed SideBar` at left and `sticky NavBar` at top
-├── style2.css        # CSS styles for `fixed Player` at bottom
-├── style3.css        # CSS styles for `Main Content Area`
-├── assets/           # Images, icons, and other assets
-└── README.md         # Project documentation
+- `index.html`        # Main HTML file
+- `style1.css`        # CSS styles for `fixed SideBar` at left and `sticky NavBar` at top
+- `style2.css`        # CSS styles for `fixed Player` at bottom
+- `style3.css`        # CSS styles for `Main Content Area`
+- `assets/`           # Images, icons, and other assets
+- `README.md`         # Project documentation
 
 ---
 
